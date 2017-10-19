@@ -1,0 +1,22 @@
+﻿{
+  "bindings": [ 
+    {
+      "type": "httpTrigger",
+      "methods": [
+        "get"
+      ],
+      "authLevel": "function",
+      "direction": "in",
+      "name": "req",
+      "route": "Adder/{x:int}/{y:int}"
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../FunctionsInCSharp.dll",
+  "entryPoint": "FunctionsInCSharp.Functions.Add2"
+}
